@@ -5,7 +5,6 @@ Written by Papiersnipper.
 All rights reserved.
 """
 
-import asyncio
 import logging
 
 from discord import Embed, Guild, Member, Role
