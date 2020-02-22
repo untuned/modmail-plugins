@@ -51,7 +51,6 @@ class Supporters(Cog):
 
         embed = Embed(
             title="Support Members",
-            url="https://github.com/papiersnipper/modmail-plugins/blob/master/supporters",
             colour=self.bot.main_color,
             description=", ".join(member_list),
         )
