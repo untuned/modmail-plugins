@@ -20,7 +20,7 @@ class Supporters(Cog):
     def __init__(self, bot: Bot) -> None:
         self.bot = bot
 
-    @command(aliases=["helpers", "supporters", "supportmembers"])
+    @command(aliases=["staff", "staffmembers"])
     @has_permissions(PermissionLevel.REGULAR)
     async def support(self, ctx: Context) -> None:
         """Send an embed with all the support members."""
@@ -30,7 +30,6 @@ class Supporters(Cog):
         if category_id is None:
             embed = Embed(
                 title="Supporters",
-                url="https://github.com/papiersnipper/modmail-plugins/blob/master/supporters",
                 description=f"I couldn't find the modmail category.\nMake sure it's set using the `?config set main_category_id` command.",
                 color=self.bot.main_color,
             )
