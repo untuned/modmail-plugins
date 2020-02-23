@@ -49,7 +49,7 @@ class Supporters(Cog):
                         member_list.append(member.mention)
 
         embed = Embed(
-            title="Support Members",
+            title="Staff Members",
             colour=self.bot.main_color,
             description=", ".join(member_list),
         )
